@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints diagonal line in the terminal
- * @n: number of lines and columns
- * Return: none
- */
+* print_diagonal - prints diagonal line on the terminal
+*@n: numbers of lines and columns
+* Return: none
+**/
 
 void print_diagonal(int n)
 {
@@ -12,11 +12,9 @@ void print_diagonal(int n)
 
 	for (l = 0; l < n; l++)
 	{
-
 		for (c = 0; c <= l; c++)
 		{
-
-			if (c != 1)
+			if (c != l)
 			{
 				_putchar(' ');
 			}
@@ -24,6 +22,7 @@ void print_diagonal(int n)
 			{
 				_putchar('\\');
 			}
+
 		}
 		_putchar('\n');
 	}
