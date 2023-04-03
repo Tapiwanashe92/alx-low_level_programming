@@ -25,8 +25,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (accept[y] == '\0')
-			return (1);
+			return (z);
 	}
-	return (1);
+	return (z);
 }
 
